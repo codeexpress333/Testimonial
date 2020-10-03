@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eff3ff;
+}
+
+.container {
+    height: 400px;
+    width: 800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 10px #ccc;
+}
+
+.container .right,
+.container .left {
+    width: 400px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+.container .right img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container .left .content {
+    margin: 50px 10px;
+    padding: 20px;
+}
+
+.container .left .content .fas {
+    color: #a06b5a;
+}
+
+.container .left .content p {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 300;
+    color: #111;
+    margin-left: 20px;
+}
+
+.container .left .content .author {
+    margin: 20px 0px;
+    line-height: 1.5;
+}
+
+.container .left .content .author h2 {
+    color: #a06b5a;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 400px;
+        min-height: 600px;
+        flex-direction: column;
+    }
+    .container .right img {
+        height: 300px;
+    }
+    .container .left .content {
+        margin: 10px 10px;
+        padding: 20px;
+    }
+    .container .left .content p {
+        font-size: 15px;
+    }
+}
+
